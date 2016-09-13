@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+
+import time
+
+class Config:
+    #mysql配置
+    mysql_host = ""
+    mysql_user = ""
+    mysql_password = ''
+    mysql_dbname = "weixin_dev"
+    mysql_port = 3306
+    mysql_charset = 'utf8'
+    mysql_table = 'zmt_weixin_url'
+    # mysql重试次数
+    mysql_retry_times = 5
+    # mysql 连接池 最大 连接数
+    mysql_max_cached = 10
+
+    #redis配置
+    redis_host = ""
+    redis_auth = ''
+    redis_retry_times = '5'
+    # 爬虫线程数量
+    clawler_num = 8
+    # 休息时间
+    sleep_time = 3600
+    # 头信息
+    headers_referer = 'http://www.baidu.com/'
+
+    dir_path = '/mnt/crawler/weixin/'
+    headers_path = '/mnt/crawler/weixin/'
+
+    created_at = time.strftime('%Y-%m-%d %H:%M:%S')
